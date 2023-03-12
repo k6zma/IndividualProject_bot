@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  bot:
+    build: .
+    command: sh -c "python -m main"
+    restart: always
+
+volumes:
+ pgdata:
